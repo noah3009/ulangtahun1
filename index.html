@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        .message {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffbcda;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #ffbcda;
+        }
+        .birthday-image {
+            width: 300px; /* Ukuran gambar */
+            border-radius: 10px; /* Sudut membulat */
+            margin-top: 20px; /* Jarak atas */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Selamat Ulang Tahun cantik!</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/2904/2904973.png" alt="Selamat Ulang Tahun!" class="birthday-image">
+    <div class="message" id="message"></div>
+    <button class="btn" onclick="generateMessage()">ept klik ini</button>
+
+    <script>
+        function generateMessage() {
+            const messages = [
+                "cie cie sekarang udah 17 tahun aku cuma mau ngucapin selamat ulang tahun ya cintaku semoga kamu panjang umur,sehat selalu dan banyak rezeki nya maaf aku cuma bisa ngasi ini sekarang hehe kado nya menyusul yaaa:)",
+                
+            ];
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            document.getElementById("message").innerText = messages[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
